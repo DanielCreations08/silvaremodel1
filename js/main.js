@@ -1,23 +1,26 @@
+
+
 (function ($) {
     "use strict";
     
-    // Smooth scrolling on the navbar links
-    $(".navbar-nav a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
-            
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
-            }
-        }
+   
+    document.addEventListener('DOMContentLoaded', function () {
+      const navbarToggle = document.getElementById('navbar-toggle');
+      const navbarLinks = document.getElementById('navbar-links');
+
+      navbarToggle.addEventListener('click', function () {
+        navbarLinks.classList.toggle('show');
+      });
+
+      // Close the menu when a link is clicked
+      navbarLinks.addEventListener('click', function () {
+        navbarLinks.classList.remove('show');
+      });
     });
-    
-    
+
+
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -132,4 +135,3 @@
     });
     
 })(jQuery);
-

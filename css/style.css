@@ -46,7 +46,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(80, 80, 80, 0);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -7792,7 +7792,7 @@ button.bg-dark:focus {
 }
 
 .p-3 {
-  padding: 1rem !important;
+  padding: .8rem !important;
 }
 
 .pt-3,
@@ -8004,6 +8004,7 @@ button.bg-dark:focus {
 
 .ml-auto,
 .mx-auto {
+  padding-top: 30px;
   margin-left: auto !important;
 }
 
@@ -10139,5 +10140,172 @@ h6,
 @media (max-width: 575.98px) {
   .footer .border-right {
     border-right: none !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Dani's Code*/
+
+.main-header {
+  text-align: center;
+  background-color: #004AAD;
+  background: #004AAD;
+  padding-top: 20px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px 0px 0px;
+  align-items: center;
+}
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggle {
+  padding-left: 25px;
+  padding-bottom: 15px;
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  color: white;
+}
+
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    padding-right: 40px;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust the top distance according to your header height */
+    background-color: #333;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .social-icon {
+      display: none;
+    }
+    }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 5px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-section {
+  background: #004AAD;
+  text-align: center;
+  padding: 10px 0; /* Adjust the padding as needed */
+  padding-bottom: 200px;
+  color: white;
+
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 35px;
+  max-width: 50%;
+  height: auto;
+}
+
+.slogan {
+  margin-top: 5px; /* Adjust the margin as needed */
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px; /* Adjust the margin as needed */
+  padding: 15px 38px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #FFDE59;
+  color: black;
+  border-radius: 6px;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+
+  .logo {
+    margin-top: 45px;
+    max-width: 100%;
   }
 }
