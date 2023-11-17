@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #555555;
   text-align: left;
-  background-color: #F3F6FF;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10272,6 +10272,10 @@ h6,
   padding: 10px 0; /* Adjust the padding as needed */
   padding-bottom: 200px;
   color: white;
+  background-image: url("/img/background-section-one.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 
 }
 
@@ -10281,7 +10285,7 @@ h6,
 }
 
 .logo {
-  margin-top: 35px;
+  margin-top: 28px;
   max-width: 50%;
   height: auto;
 }
@@ -10292,8 +10296,8 @@ h6,
 
 .cta-button {
   display: inline-block;
-  margin-top: 20px; /* Adjust the margin as needed */
-  padding: 15px 38px;
+  margin-top: 18px; /* Adjust the margin as needed */
+  padding: 15px 32px;
   font-weight: 700;
   text-decoration: none;
   background-color: #FFDE59;
