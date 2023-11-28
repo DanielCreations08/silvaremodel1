@@ -4523,7 +4523,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #004AAD;
   border-radius: 0.3rem;
 }
 
@@ -9352,7 +9352,7 @@ h6,
   }
   #header-carousel,
   .page-header {
-    margin-top: -45px;
+    margin-top: -65px;
   }
 }
 
@@ -9366,9 +9366,22 @@ h6,
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header.jpg), no-repeat center center;
+  background: url(../img/header.png) no-repeat center center;
   background-size: cover;
+  width: auto;
+  height: 400px;
 }
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    height: 252px;
+    background: url(/img/header-2-services-in-kankakee-repairs.png) no-repeat center center;
+    background-color: #004AAD; /* Add a background color if needed */
+  }
+}
+
+
+
 
 .section-title::before {
   position: absolute;
@@ -9763,22 +9776,25 @@ h6,
   text-align: center;
   background-color: #004AAD;
   background: #004AAD;
-  padding-top: 20px;
 }
 
 .main-nav {
+ 
   display: flex;
   justify-content: space-between;
-  padding: 0px 40px 0px 0px;
+  padding: 20px 40px 0px 0px;
   align-items: center;
+
 }
 
 .navbar-links {
+  
   list-style: none;
   display: flex;
 }
 
 .navbar-links li {
+  margin-top: 20px;
   margin: 0 15px;
 }
 
@@ -9841,6 +9857,7 @@ h6,
 
 /* Add hover effect for social icons */
 .social-icon {
+  padding-top: 20px;
   text-decoration: none;
   color: #fff;
   font-size: 1.5em;
@@ -9880,7 +9897,7 @@ h6,
 }
 
 .container {
-  max-width: 950px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -9890,8 +9907,17 @@ h6,
   height: auto;
 }
 
+.slogan-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
 .slogan {
   margin-top: 5px; /* Adjust the margin as needed */
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 .cta-button {
@@ -9909,7 +9935,7 @@ h6,
 @media screen and (max-width: 768px) {
 
   .logo {
-    margin-top: 4px;
+    margin-top: 40px;
     max-width: 100%;
   }
 }
@@ -9955,3 +9981,181 @@ h4 {
   color: #000000; 
   padding-top: 10px; 
 }
+
+
+/*form*/
+
+
+.form-section {
+  background-color: #004AAD;
+  display: flex;
+  justify-content: center;
+}
+
+
+.form-box {
+  background-color:unset;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+
+ 
+}
+
+
+
+.form-box h2 {
+  color: white;
+}
+
+
+.form-content h2 {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 17px;
+  color: white;
+  margin: 8px;
+}
+
+  input , textarea {
+      background-color: #DDD;
+      padding: 10px 14px;
+      border: 0;
+      font-size: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+}
+
+:focus {
+  outline: 2px solid rgb(138, 147, 15);
+}
+
+.btn-form {
+  margin-top: 30px;
+  width: 180px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: rgb(157, 255, 0);
+}
+
+
+.form-content {
+  width: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .form-content {
+    width: 99%;
+  }
+}
+
+
+.service-options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-options label input[type="checkbox"] {
+  display: none;
+}
+
+.service-options label span {
+  display: flex;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.service-options label input[type="checkbox"]:checked + span {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+ 
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio_hover_area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .portfolio_hover_area {
+  opacity: 1;
+}
+
+.portfolio_hover_area a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
