@@ -659,6 +659,10 @@ pre code {
   padding-left: 15px;
 }
 
+.img-services-page {
+  width: 50%;
+}
+
 .col {
   flex-basis: 0;
   flex-grow: 1;
@@ -10168,7 +10172,7 @@ label {
 
 .grid-1 {
   display: grid;
- 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
   justify-content: center;
