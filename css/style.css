@@ -603,7 +603,30 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
 }
+.iii {
+  display: flex;
+ 
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .iii {
+    display: grid;
+    
+  }
+
+  .worker-1 {
+    
+  }
+  
+  
+}
+
+
 
 @media (min-width: 576px) {
   .container, .container-sm {
@@ -615,6 +638,8 @@ pre code {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
+
+  
 }
 
 @media (min-width: 992px) {
@@ -660,7 +685,7 @@ pre code {
 }
 
 .img-services-page {
-  width: 50%;
+  width: 100%;
 }
 
 .col {
@@ -7076,8 +7101,42 @@ button.bg-dark:focus {
 }
 
 .w-100 {
-  width: 100% !important;
+  width: 80% !important;
+  padding-bottom: 20px;
 }
+
+
+.worker-img {
+ position: relative;
+ margin: 20px 0px 0px 0px;
+
+}
+
+
+
+.worker-1 {
+ width: 550px;
+ margin-left: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .worker-img {
+    position: relative;
+   }
+   
+   
+   
+   .worker-1 {
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+   }
+
+
+}
+
+
 
 .w-auto {
   width: auto !important;
@@ -9767,7 +9826,9 @@ h6,
 
 
 
+.about-services {
 
+}
 
 
 
